@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Word Generator</title>
+    <link
+      rel="icon"
+      sizes="16x16 32x32 48x48"
+      type="image/png"
+      href="./cipherimg.gif"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Georgian:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!--------------------------navbar------------------------------>
+      <nav>
+        <div class="navbar">
+          <!----------left-navbar------------->
+          <div class="small-menu">
+            <img src="cipherimg.gif" />
+            <a href="#">playword</a>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!--------End of left-navbar-------->
+          <!----------Right-navbar------------->
+          <div>
+            <ul>
+              <li>
+                <a href="#home-section"><span>Home</span></a>
+              </li>
+              <li>
+                <a href="#resume-section"><span>generate word</span></a>
+              </li>
+              <li>
+                <a href="#services-section"><span>Generate Proverbs</span></a>
+              </li>
+              <li>
+                <a href="#skills-section"><span>Generate Puzzle</span></a>
+              </li>
+              <li>
+                <a href="#projects-section"><span>Generate Password</span></a>
+              </li>
+              <li>
+                <a href="#contact-section"><span>Sign Up</span></a>
+              </li>
+            </ul>
+          </div>
+          <!----------End of Right-navbar------------->
+        </div>
+      </nav>
+      <!-------------------end of navbar------------------->
+    </header>
+    <main>
+      <div class="right-sidebar-container">
+        <form class="word-generate">
+          <label for="words">Make your Paragraph</label>
+          <select name="Paragraph" id="paragraph">
+            <option class="select" value="1">10</option>
+            <option class="select" value="100">100</option>
+            <option class="select" value="200">200</option>
+            <option class="select" value="500">500</option>
+          </select>
+          <button type="button" id="generate-btn" class="paragraph-btn">
+            Generate
+          </button>
+        </form>
+        <div class="search-box">
+          <textarea
+            class="search-text"
+            placeholder="Enter Sentences, words ...."
+          ></textarea>
+          <textarea
+            class="replace-text"
+            placeholder="Enter Sentences, words.... your choice"
+          ></textarea>
+          <button type="button" class="paragraph-btn find-btn">
+            Find&Replace
+          </button>
+        </div>
+      </div>
+      <!-------------------end of right sidebar------------------->
+      <div class="main-container">
+        <textarea
+          class="textarea main-textarea"
+          placeholder="Enter words..."
+        ></textarea>
+        <div class="display-container">
+          <p class="display-text"></p>
+        </div>
+        <button class="decrypt-btn">Decrypt</button>
+      </div>
+      <!-------------------end of disply box------------------->
+      <div class="left-sidebar-container">
+        <div class="left-sidebar">
+          <button type="button" class="encrypt-btn toword">Toword</button>
+          <button type="button" class="encrypt-btn toshaps">Toshaps</button>
+          <button type="button" class="encrypt-btn tonumber">Tonumber</button>
+          <button type="button" class="encrypt-btn tochar">Tocharacters</button>
+        </div>
+      </div>
+      <!-------------------end of right sidebar------------------->
+    </main>
+    <footer>
+      <div>
+        <div>
+          <p style="margin-bottom: 2rem">
+            © <span>Copyright</span> <strong>Naeem Amiri</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+        <div>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
